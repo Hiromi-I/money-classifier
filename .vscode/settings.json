@@ -1,6 +1,5 @@
 {
   "python.venvPath": ".venv",
-  "python.pythonPath": "${workspaceFolder}/.venv/bin/python3.8",
   "python.autoComplete.extraPaths": [
     "${workspaceFolder}/.venv/lib/python3.8/site-packages"
   ],
@@ -17,5 +16,10 @@
     "**/templates/**/*": "django-txt",
     "**/requirements{/**,*}.{txt,in}": "pip-requirements"
   },
-  "emmet.includeLanguages": { "django-html": "html" }
+  "emmet.includeLanguages": {
+    "django-html": "html"
+  },
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/.venv/lib/python3.8/site-packages"
+  ]
 }
